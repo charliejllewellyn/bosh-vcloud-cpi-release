@@ -305,11 +305,11 @@ module VCloudCloud
           :headers => {
             :Authorization => auth_header,
             :content_type => 'application/x-www-form-urlencoded'
-          },
-          :payload => URI.encode_www_form({
-            :Authorization => auth_header,
-            :Accept => "application/*+xml;version=#{VCLOUD_VERSION_NUMBER}"
           }),
+          #:payload => URI.encode_www_form({
+          #  :Authorization => auth_header,
+          #  :Accept => "application/*+xml;version=#{VCLOUD_VERSION_NUMBER}"
+          #}),
           :with_response => true
         )
 
